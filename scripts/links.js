@@ -13,7 +13,7 @@ whatsapp.addEventListener('click', function(){
 })
 
 email.addEventListener('click', function(){
-  window.open('mailto:usermatheus250@gmail.com', '_blank')
+  window.open('mailto:usermatheus230@gmail.com', '_blank')
 })
 
 github.addEventListener('click', function(){
@@ -23,3 +23,4 @@ github.addEventListener('click', function(){
 telegram.addEventListener('click', function(){
   window.open('https://www.t.me/+5589999259619', '_blank')
 })
+
