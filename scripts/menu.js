@@ -1,11 +1,18 @@
 const menuIcon = window.document.getElementById('menuIcon');
+const menuIconX = window.document.getElementById('menuIconX')
 const menuHtml = window.document.querySelector('menu');
 
 menuIcon.addEventListener('click', function() {
   if (menuHtml.style.display === "none" || menuHtml.style.display === "") {
-    menuHtml.style.display = "block"
-  } else {
-    menuHtml.style.display = "none"
+    menuHtml.style.display = "block";
+    menuIcon.style.display = "none";
+    menuIconX.style.display = "block";
+    
+    menuIconX.addEventListener('click', function(){
+      menuHtml.style.display = "none"
+      menuIcon.style.display = "block"
+      menuIconX.style.display = "none"
+    })
   }
 });
 
