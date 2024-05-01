@@ -21,9 +21,14 @@ header .menu {
   margin: 10px;
 }
 
+header #menuIconX {
+  display: none;
+}
+
 header menu {
   display: none;
 }
+
 
 header ul {
   list-style: none;
