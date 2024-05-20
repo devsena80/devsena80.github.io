@@ -1,58 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/index.css">
-  <title>Portfólio // Matheus Sena</title>
+  <title>Portifólio // Matheus Sena</title>
 </head>
+
 <body>
   <header>
-    <div class="menu">
-      <span class="title">Matheus Sena</span>
-      <i class="fa-solid fa-bars" id="menuIcon"></i>
-      <i class="fa-solid fa-x" id="menuIconX"></i>
-    </div>
-    <menu>
-      <hr>
-      <ul>
-        <li id="sobre">Sobre</li>
-        <li id="github-0">Github</li>
-        <li>Projetos</li>
-      </ul>
-    </menu>
+    <section>
+      <h1 class="title">Matheus Sena</h1>
+    </section>
+    <section>
+      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-bars"></i>
+    </section>
   </header>
-  <div class="about">
-    <article>
-      <span class="text-about-me" id="about-me">Olá, sou estudante de <span class="bg">Desenvolvimento Web Full Stack</span> com foco no <span class="bg">Back-End</span>.</span>
-    </article>
-    <article>
-      <span class="text-networks">Veja minhas redes sociais</span>
+  
+  <div class="container-about-me">
+    <section class="s-text">
+      <h1 class="title">Jovem Estudante</h1>
+      <span class="text">Olá, me chamo Matheus, tenho 16 anos e atualmente sou estudante de Desenvolvimento Web Full Stack com foco principalmente no Back-End.</span>
+    </section>
+    <section class="s-image">
+      <img class="image" src="https://camo.githubusercontent.com/0edd5a396669be5c6c06e56760de5250d5781a2a8660855aa97075400f7d46ac/68747470733a2f2f643278726b6e353661773272646f2e636c6f756466726f6e742e6e65742f6963632f6173736574732f4d6f62696c652f4c6f6164696e675f426c75652e676966">
+    </section>
+  </div>
+  
+  <div class="projects-container">
+    <div>
       <section>
-        <i id="email" class="fa-item fa-solid fa-envelope"></i>
-        <i id="telegram" class="fa-item fa-brands fa-telegram"></i>
-        <i id="whatsapp" class="fa-item fa-brands fa-whatsapp"></i>
-        <i id="instagram" class="fa-item fa-brands fa-instagram"></i>
+        <h2 class="title-child">Veja alguns dos meus projetos</h2>
       </section>
-    </article>
+    </div>
+    <div class="d-container">
+      
+      <div class="child-container">
+        <section>
+          <span>Vazio</span>
+        </section>
+      </div>
+      <div class="child-container">
+        <section>
+          <span>Vazio</span>
+        </section>
+      </div>
+      <div class="child-container">
+        <section>
+          <span>Vazio</span>
+        </section>
+      </div>
+      <div class="child-container">
+        <section>
+          <span>Vazio</span>
+        </section>
+      </div>
+    </div>
   </div>
   
-  <div class="profile-container">
+  <div class="container-networks">
     <section>
-      <img src="https://avatars.githubusercontent.com/u/152402966?v=4" alt="Profile image on Github.">
+      <span class="title">Siga-me nas redes sociais </span>
     </section>
-  </div>
-  <div class="links-container">
     <section>
-      <button id="github">Github</button>
+      <i id="email" class="fa-item fa-solid fa-envelope"></i>
+      <i id="telegram" class="fa-item fa-brands fa-telegram"></i>
+      <i id="whatsapp" class="fa-item fa-brands fa-whatsapp"></i>
+      <i id="instagram" class="fa-item fa-brands fa-instagram"></i>
     </section>
   </div>
   
-  <script src="scripts/links.js"></script>
-  <script src="scripts/menu.js"></script>
+  <footer>
+    <section>
+      <span class="copyright-text">Desenvolvido por Matheus Sena, 2024</span>
+    </section>
+  </footer>
 </body>
 </html>
