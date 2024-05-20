@@ -1,116 +1,190 @@
 * {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
-  color: black;
-  background: whitesmoke;
+  position: relative;
+  background: linear-gradient(to right, #202020, #282828);
+  color: white;
+  margin: 10px 0 50px;
 }
 
-header .title {
-  font-size: 17px;
-  font-weight: 600;
-}
-
-header .menu {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
-}
-
-header #menuIconX {
-  display: none;
-}
-
-header menu {
-  display: none;
-}
-
-
-header ul {
-  list-style: none;
-  padding: 5px 20px;
-  font-size: 15px;
-}
-
-.about {
-  opacity: 70%;
   margin: 20px;
 }
 
-.about article {
+header .title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+header .fa-bars, .fa-moon {
+  margin: 0 5px;
+  font-size: 22px;
+}
+
+.container-about-me {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px 0;
+  padding: 20px 50px;
 }
 
-.about article .text-about-me {
-  font-size: 15px;
-  text-align: center;
-  padding: 0 10px;
+.container-about-me .title {
+  font-size: 25px;
+  color: #73f391;
 }
 
-
-.about article .text-networks {
-  margin: 10px 0 0 0;
-  font-size: 15px;
+.container-about-me .text {
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.about article section {
-  margin: 0 3px;
-}
-
-.about article section .fa-item {
-  margin: 5px 5px 0 0;
-  font-size: 20px;
-}
-
-.profile-container {
-  display: none;
+.container-about-me .s-image {
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.profile-container img {
   width: 80px;
   height: 80px;
+  border: 10px solid #73f391;
   border-radius: 50%;
-}
-
-.links-container section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 10px;
 }
 
-.links-container button {
-  width: 150px;
-  height: 50px;
-  margin: 3px;
-  border: none;
-  border-radius: 16px;
-  background: #010101;
-  font-weight: 600;
+.container-about-me .image {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.projects-container .title-child {
+  font-size: 16px;
+}
+
+.projects-container .d-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.projects-container .child-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 160px;
+  background: linear-gradient(to left, #232323, #282828);
+  border-radius: 14px;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 5px;
+}
+
+/* Temporário */
+.projects-container .child-container span {
   font-size: 15px;
-  color: white;
+  font-weight: 600;
+  opacity: 80%;
 }
 
-/* Animações */
-.pulse {
-  animation: pulse-animation 0.5s forwards;
+.container-networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes pulse-animation {
-  0%, 100% {
-    transform: scale(1);
+.container-networks .title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.container-networks .fa-item {
+  font-size: 20px;
+  margin: 5px 3px;
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 20px;
+}
+
+footer .copyright-text {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 70%;
+}
+
+/* Media querie */
+@media (max-width: 320px) {
+  header .title {
+    font-size: 17px;
   }
-  50% {
-    transform: scale(1.1);
+  
+  header .fa-moon {
+    font-size: 17px;
   }
+  
+  header .fa-bars {
+    font-size: 17px
+  }
+  
+  .container-about-me {
+    padding: 5px 50px;
+  }
+  
+  .container-about-me .text {
+    font-size: 16px;
+  }
+  
+  .projects-container .title-child {
+    font-size: 14px;
+  }
+  
+  .projects-container .child-container {
+    width: 115px;
+    height: 145px;
+  }
+  
+  .container-networks .title {
+    font-size: 14px;
+  }
+  
+  .container-networks .fa-item {
+    font-size: 16px;
+  }
+  
+  footer {
+    position: absolute;
+  }
+  
+  footer .copyright-text {
+    font-size: 10px;
+  }
+}
+
+footer {
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
 }
